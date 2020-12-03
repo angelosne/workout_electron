@@ -15,12 +15,11 @@ function createWindow() {
         height: 600,
         webPreferences: {
             nodeIntegration: true
-        },
-        alwaysOnTop: true
+        }
     });
 
     mainWindow.loadURL(url.format({
-        pathname: path.join(__dirname, '..', 'app', 'index.html'),
+        pathname: path.join(__dirname, 'app', 'index.html'),
         protocol: 'file:',
         slashes: true
     }));
